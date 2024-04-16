@@ -16,8 +16,4 @@ Materials:
  - Wifi EN Button - [Tactile Button switch (6mm) x 20 pack](https://core-electronics.com.au/tactile-button-switch-6mm-x-20-pack.html?qty=1)
  - Piezo - [Piezo Buzzer](https://core-electronics.com.au/piezo-buzzer.html?qty=1)
 
-   Just writing that list makes me want to work on this project again. Currently I'm too busy. But I was meant to have it done by the end of this term (1). I'll be working on it in the Aussie term 1 school holidays.
-
-   While all of these component can be wired up together directly to the MCU, I have designed a PCB that I'll add in the school holidays, and a circuit design.
-
-   This project actually makes me so excited whenever I work on it, I don't have any more time to work on it right now, but I will definetely get back to it soon.
+   Just writing that list makes me want to work on this project again. Yay! I finally have time to work on this again, I should be doing schoolwork, but, oh well!
