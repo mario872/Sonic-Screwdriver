@@ -64,7 +64,7 @@ ir_read.clear()
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 # Variables Set Up
 
-mode = 0 #The current mode we are in, modes listed further down
+mode = 0 # The current mode we are in, modes listed further down
 
 # Setting up colours for the button led
 # If you wanted a standard red, you would use (255, 0, 0) but the
@@ -375,4 +375,36 @@ def permanent_bank_storage_mode():
                     code = code[:-1]
                     if banks.index(item) == 7:
                         banks_txt.write(code)
-     
+                    banks_txt.flush()
+
+        elif largebtnval():
+            ir_send.send(array.array('H', [int(banks[bank][x]) for x in range(len(banks[bank]))]))
+            print(f'Sent {banks[bank]}')
+
+            if not stealth:
+                vibrator.value = True
+                piezo.duty_cycle = 60000
+
+            while largebtnval():
+                if not stealth:
+                    rise_and_fall()
+                else:
+                    set_colour(black, neopixel=False)
+                    time.sleep(0.3)
+                    set_colour(red, neopixel=False)
+                    time.sleep(0.3)
+                    set_colour(aqua, neopixel=False)
+
+            vibrator.value = False
+            led.duty_cycle = 0
+            piezo.duty_cycle = 0
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+# Main Loop
+
+modes = [tv_b_gone_mode, dynamic_mode, annoying_mode, tv_b_gone_mode,
+         permanent_bank_storage_mode]  # This is a list of the modes available on the current sonic screwdriver model
+
+while True:
+    modes[mode]()  # Execute a function in the modes list based on the current mode
