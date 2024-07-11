@@ -16,4 +16,4 @@ Materials:
  - Wifi EN Button - [Tactile Button switch (6mm) x 20 pack](https://core-electronics.com.au/tactile-button-switch-6mm-x-20-pack.html?qty=1)
  - Piezo - [Piezo Buzzer](https://core-electronics.com.au/piezo-buzzer.html?qty=1)
 
- I've been working on this for a while now, and it's pretty stable, when I add the last feature I'll push the changes.
+Added the updated code and hardware configuration, note that `how-to-use.md` is not finished yet.
