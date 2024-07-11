@@ -1,0 +1,36 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Sonic Screwdriver v4.3
+*Date=10:36:59
+*CreatedBy=Fritzing 0.9.6b.2021-02-21.0.9.6
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;29.7854;-7.21126;0;Bottom;Via3
+2;;;39.6644;-4.96911;0;Bottom;TXT1
+3;;THT;30.911;-10.8465;-90;Bottom;S
+4;;THT;16.9517;-10.8465;0;Bottom;Battery
+5;;[THT];36.9818;-10.8152;90;Bottom;Wifi EN
+6;;vibe-motor-10mm;6.14172;-11.4806;90;Bottom;Motor
+7;;THT;32.1917;-18.4665;90;Bottom;Connector
+8;;;19.1877;-9.04601;0;Bottom;Via2
+9;;;18.4404;-15.142;0;Bottom;Via5
+10;;THT;33.4617;-3.22655;-90;Bottom;Breakout
+11;;;21.5916;-10.4442;0;Bottom;IMG1
+12;;;42.5196;-18.19;0;Bottom;Via1
+13;;;32.177;-16.4548;0;Bottom;TXT3
+14;;TO92 [THT];11.1518;-10.656;-90;Bottom;Transistor
+15;;THT;25.831;-10.8465;-90;Bottom;GND
+16;;THT;11.8717;-18.4665;-90;Bottom;J1
+17;;;29.7428;-4.94619;0;Bottom;TXT1
+18;;THT;11.8717;-3.22655;-90;Bottom;J2
+19;;;22.2883;-0.873695;0;Bottom;TXT4
+20;;;14.478;-15.7516;0;Bottom;Via4
+21;;;22.3249;-20.6395;0;Bottom;TXT4
