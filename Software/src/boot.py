@@ -22,17 +22,17 @@ import microcontroller
 import pwmio
 import time
 
-button = digitalio.DigitalInOut(board.GP6)
+button = digitalio.DigitalInOut(board.D4)
 button.direction = digitalio.Direction.INPUT
 button.pull = digitalio.Pull.UP
 
-r = pwmio.PWMOut(board.GP1)
-#g = pwmio.PWMOut(board.GP2)
-#b = pwmio.PWMOut(board.GP3)
+r = pwmio.PWMOut(board.D10)
+# g = pwmio.PWMOut(board.GP2)
+# b = pwmio.PWMOut(board.GP3)
 
 r.duty_cycle = 65535
-#g.duty_cylce = 65535
-#b.duty_cylce = 65535
+# g.duty_cylce = 65535
+# b.duty_cylce = 65535
 
 if not button.value:
     while not button.value:
@@ -40,8 +40,9 @@ if not button.value:
         time.sleep(0.1)
         r.duty_cycle = 65535
         time.sleep(0.1)
-    
-    microcontroller.on_next_reset(microcontroller.RunMode.BOOTLOADER)
-    microcontroller.reset()
 
-storage.remount("/", False)
+    storage.remount("/", True)
+    # microcontroller.on_next_reset(microcontroller.RunMode.BOOTLOADER)
+    # microcontroller.reset()
+else:
+    storage.remount("/", False)

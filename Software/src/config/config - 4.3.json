@@ -1,0 +1,235 @@
+{
+  "pins": [
+    {
+      "name": "led",
+      "type": "pwmout",
+      "pcb_pin": "LED",
+      "variable_frequency": false,
+      "pin": "D2"
+    },
+    {
+      "name": "wifi_en",
+      "type": "digitalin",
+      "pcb_pin": "Wifi EN",
+      "pull": false,
+      "value_when_pressed": true,
+      "pin": "D1"
+    },
+    {
+      "name": "piezo",
+      "type": "pwmout",
+      "pcb_pin": "Piezo",
+      "variable_frequency": true,
+      "pin": "D6"
+    },
+    {
+      "name": "vibrator",
+      "type": "digitalout",
+      "pcb_pin": "Motor",
+      "pin": "D3"
+    },
+    {
+      "name": "ir_send",
+      "type": "pulseout",
+      "pcb_pin": "TXGND",
+      "pin": "D13"
+    },
+    {
+      "name": "ir_read",
+      "type": "pulsein",
+      "pcb_pin": "RX",
+      "pin": "D12"
+    },
+    {
+      "name": "small_button",
+      "type": "digitalin",
+      "pcb_pin": "S2",
+      "pull": true,
+      "value_when_pressed": false,
+      "pin": "D4"
+    },
+    {
+      "name": "large_button",
+      "type": "digitalin",
+      "pcb_pin": "S1",
+      "pull": true,
+      "value_when_pressed": false,
+      "pin": "D5"
+    },
+    {
+      "name": "r",
+      "type": "pwmout",
+      "pcb_pin": "R",
+      "variable_frequency": false,
+      "pin": "D10"
+    },
+    {
+      "name": "g",
+      "type": "pwmout",
+      "pcb_pin": "G",
+      "variable_frequency": false,
+      "pin": "D9"
+    },
+    {
+      "name": "b",
+      "type": "pwmout",
+      "pcb_pin": "B",
+      "variable_frequency": false,
+      "pin": "D8"
+    },
+    {
+      "name": "pixel","type": "neopixel",
+      "pcb_pin":"N/A",
+      "pin": "D21"
+    }
+  ],
+  "led_pin": "D2",
+
+  "default_song": [
+        {
+            "note": "D4",
+            "duration": 0.375
+        },
+        {
+            "note": "E4",
+            "duration": 0.375
+        },
+        {
+            "note": "A3",
+            "duration": 0.25
+        },
+        {
+            "note": "E4",
+            "duration": 0.375
+        },
+        {
+            "note": "F4",
+            "duration": 0.375
+        },
+        {
+            "note": "A4",
+            "duration": 0.0625
+        },
+        {
+            "note": "G4",
+            "duration": 0.0625
+        },
+        {
+            "note": "F4",
+            "duration": 0.125
+        },
+        {
+            "note": "D4",
+            "duration": 0.375
+        },
+        {
+            "note": "E4",
+            "duration": 0.375
+        },
+        {
+            "note": "A3",
+            "duration": 0.625
+        },
+        {
+            "note": "N",
+            "duration": 0.05
+        },
+        {
+            "note": "D4",
+            "duration": 0.125
+        },
+        {
+            "note": "N",
+            "duration": 0.005
+        },
+        {
+            "note": "D4",
+            "duration": 0.125
+        },
+        {
+            "note": "N",
+            "duration": 0.05
+        },
+        {
+            "note": "D4",
+            "duration": 0.125
+        },
+        {
+            "note": "N",
+            "duration": 0.005
+        },
+        {
+            "note": "D4",
+            "duration": 0.125
+        },
+        {
+            "note": "N",
+            "duration": 0.05
+        },
+        {
+            "note": "D4",
+            "duration": 0.375
+        }
+  ],
+
+  "wifi_modes": ["homeassistant_mode"],
+  "offline_modes": ["dynamic_mode", "tv_b_gone_mode", "annoying_mode", "play_music", "send_ducky", "permanent_bank_storage_mode"],
+
+  "wifi_possible": true,
+  "wifi_mode_config": {
+    "homeassistant_url": "https://XXXXXXXXXXXXXX",
+    "wifi_networks": [
+      {
+        "ssid": "X1",
+        "password": "P1"
+      },
+      {
+        "ssid": "Example",
+        "password": "DefinetlyMyPassword"
+      }
+    ]
+  },
+  "homeassistant_token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "homeassistant_actions": [
+    {
+      "name": "james_room_lights",
+      "service": "light/toggle",
+      "entity_id": "light.james_room_light"
+    },
+    {
+      "name": "living_room_lights",
+      "service": "light/toggle",
+      "entity_id": "light.main_living_room_light"
+    },
+    {
+      "name": "kitchen_lights",
+      "service": "light/toggle",
+      "entity_id": "light.kitchen_light"
+    },
+    {
+      "name": "office_lights",
+      "service": "light/toggle",
+      "entity_id": "light.office_light"
+
+    },
+    {
+      "name": "williams_room_lights",
+      "service": "light/toggle",
+      "entity_id": "light.williams_room_light"
+    },
+    {
+      "name": "garage_door",
+      "service": "cover/toggle",
+      "entity_id": "cover.garage_door"
+    }
+  ],
+  "http_actions": [
+    {
+      "name": "get_weather",
+      "type": "GET",
+      "url": "https://openweathermap.com",
+      "json": {"Oui Oui Baguette?": "Oui"},
+      "headers": {"Authorization": "Bearer OF BAD NEWS"},
+    }
+  ]
+}

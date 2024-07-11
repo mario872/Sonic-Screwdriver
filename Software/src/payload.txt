@@ -1,0 +1,13 @@
+REM made by J0K3RS-L4UGH
+REM Basically it enters chrome and rickrolls with no ads
+GUI
+DELAY 2000
+STRING Edge
+DELAY 1000
+ENTER
+DELAY 2000
+CONTROL t
+DELAY 500
+STRING https://www.youtube.com/watch?v=xvFZjo5PgG0
+DELAY 500
+ENTER
