@@ -1,7 +1,7 @@
 # Sonic-Screwdriver
 A real life sonic screwdriver that can turn on and off tvs and other remote controlled devices using infrared technology.
 
-v4 Materials:
+v4.1 Materials:
  - MCU - [ESP32-S3 Mini Development Board](https://core-electronics.com.au/esp32-s3-mini-development-board.html?qty=1)
  - Primary Button - [Rugged Metal Pushbutton - 16mm 6V RGB Momentary](https://core-electronics.com.au/rugged-metal-pushbutton-16mm-6v-rgb-momentary.html?qty=1)
  - Secondary Button - [Momentary Button - Panel Mount (Black)](https://core-electronics.com.au/momentary-button-panel-mount-black.html?qty=1)
