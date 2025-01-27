@@ -1,0 +1,50 @@
+{
+    "ha_address": "https://ekeuzoifgjt8jeyg6l9qaop6pjd3oe71.ui.nabu.casa",
+    "ha_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhMmY4NTgzYTBhODY0ZjBlYmViMTJjZmE0YWViNmYwNyIsImlhdCI6MTczNDkxNDI1NCwiZXhwIjoyMDUwMjc0MjU0fQ.n1wioaESOl1yE-diq_gqrr8Bauu4KaylHnwtOfciuRw",
+    "my_networks": [{"SSID": "ASIO Surveillance Van", "password": "sareanddan"}, {"SSID": "The Asylum", "password": "KofiDog99!"}, {"SSID": "Not James’s iPhone", "password": "sareanddan"}],
+    "server_url": "http://192.168.86.250:5000",
+
+    "devices": {
+        "covers": [
+            {"name": "James's Bedroom\nCurtains", "entity_id": "cover.james_room_blinds"},
+            {"name": "William's Room\nBlinds", "entity_id": "cover.william_s_room_blinds"},
+            {"name": "Master Bedroom Curtain", "entity_id": "cover.master_bedroom_curtain"},
+            {"name": "Master Bedroom\nSheers", "entity_id": "cover.master_bedroom_sheers"},
+            {"name": "Kitchen Curtains", "entity_id": "cover.kitchen_curtains"},
+            {"name": "Family Room", "entity_id": "cover.family_room"},
+            {"name": "Wardrobe Blind", "entity_id": "cover.wardrobe_blind"},
+            {"name": "Office Blind", "entity_id": "cover.office_blind"},
+            {"name": "Living Room\nCurtains", "entity_id": "cover.living_room_curtains"},
+            {"name": "Stairs Blind", "entity_id": "cover.stairs_blind"},
+            {"name": "W Bedroom\nDamper", "entity_id": "cover.w_bedroom_damper"},
+            {"name": "Kid's Room\nDamper", "entity_id": "cover.kid_s_room_damper"},
+            {"name": "C Bedroom\nDamper", "entity_id": "cover.c_bedroom_damper"},
+            {"name": "J Bedroom\nDamper", "entity_id": "cover.j_bedroom_damper"},
+            {"name": "Master Damper", "entity_id": "cover.master_damper"},
+            {"name": "Living Damper", "entity_id": "cover.living_damper"},
+            {"name": "Kitchen Damper", "entity_id": "cover.kitchen_damper"},
+            {"name": "Garage Door", "entity_id": "cover.garage_door"}
+        ],
+        "lights": [
+            {"name": "James Room Light", "entity_id": "light.james_room_light"},
+            {"name": "James Bedroom Strip Lights", "entity_id": "light.james_bedroom_strip_lights"},
+            {"name": "William's Room Light", "entity_id": "light.williams_room_light"},
+            {"name": "Charlotte's Room Light", "entity_id": "light.charlottes_room_light"},
+            {"name": "Kids Room Light", "entity_id": "light.kids_room_light"},
+            {"name": "TARDIS Neopixels", "entity_id": "light.tardis_neopixels"},
+            {"name": "Family Room Lights", "entity_id": "light.family_room_lights"},
+            {"name": "Main Living Room Light", "entity_id": "light.main_living_room_light"},
+            {"name": "Kitchen Light", "entity_id": "light.kitchen_light"},
+            {"name": "Master Bedroom Light", "entity_id": "light.master_bedroom_light"},
+            {"name": "Hallway Lights", "entity_id": "light.hallway_lights"},
+            {"name": "Upstairs Hallway Lights", "entity_id": "light.upstairs_hallway_lights"},
+            {"name": "Wardrobe Light", "entity_id": "light.wardrobe_light"},
+            {"name": "Office Light", "entity_id": "light.office_light"},
+            {"name": "Outside Light", "entity_id": "light.outside_light"},
+            {"name": "Flood Light", "entity_id": "light.flood_light"},
+            {"name": "Backyard Flood Light", "entity_id": "light.backyard_flood_light"},
+            {"name": "Christmas\nTree", "entity_id": "light.wled_main"},
+            {"name": "Fairy Lights", "entity_id": "light.fairy_lights"}
+        ]
+    }
+}
